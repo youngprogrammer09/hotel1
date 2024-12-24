@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -43,7 +43,7 @@
             <i class="icon_close"></i>
         </div>
         <div class="search-icon  search-switch">
-            <i class="icon_search"></i>
+          <img src="../Снежная Королева ИТОГ/img/logo.png" alt="">
         </div>
         <div class="header-configure-area">
             <div class="language-option">
@@ -51,13 +51,14 @@
                     
                 </div>
             </div>
-            <a href="#" class="bk-btn">Бронируйте сайчас</a>
+            <a href="rooms.html" class="bk-btn">Забронировать сейчас</a>
         </div>
         <nav class="mainmenu mobile-menu">
             <ul>
                 <li class="active"><a href="./index.html">Главная</a></li>
-                <li><a href="./rooms.html">Номера</a></li>
+                <li><a href="./blog.html">Галерея</a></li>
                 <li><a href="./contact.html">Контакты</a></li>
+                
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -82,13 +83,12 @@
                             <nav class="mainmenu">
                                 <ul>
                                     <li class="active"><a href="./index.html">Главная</a></li>
-                                    <li><a href="./rooms.html">Номера</a></li>                  
+                                    <li><a href="./blog.html">Галерея</a></li>             
                                     <li><a href="./contact.html">Контакты</a></li>
+                                    <li><a href="./rooms.html">Забронировать Cейчас</a></li>
                                 </ul>
                             </nav>
-                            <div class="nav-right search-switch">
-                                <i class="icon_search"></i>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -104,42 +104,14 @@
                 <div class="col-lg-6">
                     <div class="hero-text">
                         <h1>Снежная Королева</h1>
-                        <p>Лучший сайт бронирования, включая рекомендации по международным поездкам и поиску недорогих гостиниц.
+                        <p>Лучший отель Домбая, включая рекомендации по международным поездкам и поиску недорогих гостиниц.
                         <a href="#" class="primary-btn">Откройте для себя сейчас</a>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
-                    <div class="booking-form">
-                        <h3>Бронирование вашего номера</h3>
-                        <form action="rooms.html">
-                            <div class="check-date">
-                                <label for="date-in">Дата въезда:</label>
-                                <input type="text" class="date-input" id="date-in">
-                                <i class="icon_calendar"></i>
-                            </div>
-                            <div class="check-date">
-                                <label for="date-out">Дата выезда:</label>
-                                <input type="text" class="date-input" id="date-out">
-                                <i class="icon_calendar"></i>
-                            </div>
-                            <div class="select-option">
-                                <label for="guest">Гости:</label>
-                                <select id="guest">
-                                    <option value="">1 Взрослый</option>
-                                    <option value="">2 Взрослых</option>
-                                    <option value="">3 Взрослых</option>
-                                    <option value="">4 Взрослых</option>
-                                    <option value="">5 Взрослых</option>
-                                    <option value="">6 Взрослых</option>
-                                    <option value="">7 Взрослых</option>
-                                    <option value="">8 Взрослых</option>
-                                    <option value="">9 Взрослых</option>
-                                    <option value="">10 Взрослых</option>
-                                </select>
-                            </div>
-                            <button type="submit">Свободные номера</button>
-                        </form>
-                    </div>
+
+                  <!-- Модуль виджет начало -->
+                  
+                      <!-- Модуль виджет - конец-->
                 </div>
             </div>
         </div>
@@ -151,6 +123,38 @@
     </section>
     <!-- Hero Section End -->
 
+    <!-- Модуль Бронирования начало -->
+    <div id="booking_iframe" style="position: relative; padding-bottom: 30px;">
+        <div id="bn_iframe" style="font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium',
+        Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size: 12px; line-height:
+        1em; opacity: .5; z-index: 10; margin-top: 10px;">
+        <div style="color: #1403fc!important; background: rgba(0, 0, 0, 0)!important;">
+        <a style="color: #808080!important; background: #fff!important;"
+        href="https://bnovo.ru/bnovo-mb/?utm_source=client_modul_br" id="bnovo_link"
+        target="_blank">Система управления отелем Bnovo ©</a>
+        </div>
+        </div>
+        </div>
+        <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+        <script type="text/javascript">
+        (function () {
+        var BnovoBookFrame = new BookingIframe({
+        html_id: "booking_iframe",
+        uid: "019d0080-529d-47d2-8566-d26b237d81cc",
+        lang: "ru",
+        width: "auto",
+        height: "auto",
+        rooms: "",
+        IsMobile: "0",
+        scroll_to_rooms: "0",
+        });
+        BnovoBookFrame.init();
+        })();
+        </script>
+   
+    <!-- Модуль Бронированя конец -->
+
+
     <!-- About Us Section Begin -->
     <section class="aboutus-section spad">
         <div class="container">
@@ -159,14 +163,14 @@
                     <div class="about-text">
                         <div class="section-title">
                             <span>О нашем отеле</span>
-                            <h2>Отель находится <br />В центре города</h2>
+                            <h2>Отель находится <br />В 400 метрах от главной канатной дороги</h2>
                         </div>
-                        <p class="f-para">Cнежная Королева является ведущим сайтом онлайн-бронирования жилья. 
+                        <p class="f-para">Cнежная Королева является одной из первых ведущих гостиниц Домбая. 
                              Мы увлечены путешествиями.
                              Каждый день мы вдохновляем миллионы путешественников </p>
                             
-                        <p class="s-para">Поэтому, когда дело доходит до бронирования идеального отеля,
-                         мы вам поможем.</p>
+                        <p class="s-para">Поэтому, когда дело доходит до выбора идеального отеля,
+                         мы к вашим услугам.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -223,134 +227,7 @@
             </div>
         </div>
     </section>
-    <!-- Services Section End -->
-
-    <!-- Home Room Section Begin -->
-    <section class="hp-room-section">
-        <div class="container-fluid">
-            <div class="hp-room-items">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="img/room/room-detailseight.jpg">
-                            <div class="hr-text">
-                                <h3>Номер “Стандарт” с видом на горы</h3>
-                                <h2>5.000₽<span>/Сутки</span></h2>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="r-o">Размер:</td>
-                                            <td>21.3 кв/м</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Вместимость:</td>
-                                            <td>Максимально 2 человека</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Кровать:</td>
-                                            <td>Односпальная (2)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Services:</td>
-                                            <td>Wifi, Ванная комната, телевизор с кабельными каналами.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="room-details(8).html" class="primary-btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="img/room/room-detailssix.jpg">
-                            <div class="hr-text">
-                                <h3>Номер “Комфорт с балконом”</h3>
-                                <h2>5.500₽<span>/Сутки</span></h2>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="r-o">Размер:</td>
-                                            <td>29.2 кв/м</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Вместимость:</td>
-                                            <td>Максимально 2 человека</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Кровать:</td>
-                                            <td>Двуспальная</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Services:</td>
-                                            <td>Wifi, Ванная комната, телевизор с кабельными каналами</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="room-details(6).html" class="primary-btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="img/room/roombb.jpg">
-                            <div class="hr-text">
-                                <h3>Номер “Комфорт+ с балконом”</h3>
-                                <h2>6.000₽<span>/Сутки</span></h2>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="r-o">Размер:</td>
-                                            <td>33.9 кв/м</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Вместимость:</td>
-                                            <td>Максимально 3 человека</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Кровать:</td>
-                                            <td>Двуспальная,диван</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Сервис:</td>
-                                            <td>Wifi, Ванная комната, телевизор с кабельными каналами</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="room-details(21).html" class="primary-btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="img/room/luxe.jpg">
-                            <div class="hr-text">
-                                <h3>Номер “Люкс+”</h3>
-                                <h2>10.000₽<span>/Сутки</span></h2>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="r-o">Размер:</td>
-                                            <td>46 кв/м</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Вместимость:</td>
-                                            <td>Максимально 5 человек</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Кровать:</td>
-                                            <td>Двуспальная (2), диван</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="r-o">Сервис:</td>
-                                            <td>Wifi, Ванная комната, телевизор с кабельными каналами</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="room-details(22).html" class="primary-btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Home Room Section End -->
+    
 =
  
 
